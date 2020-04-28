@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: currencyms
+        uri: lb://currencyms
+        predicates:
+        - Path=/calcurrency
+© 2020 GitHub, Inc.
