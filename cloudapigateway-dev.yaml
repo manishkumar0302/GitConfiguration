@@ -1,9 +1,8 @@
-spring:
+spring
   cloud:
     gateway:
-      routes:
-       - id: conversionms
+     routes:
+      - id: conversionms
         uri: lb://conversionms
         predicates:
         - Path=/conversion/**
-© 2020 GitHub, Inc.
