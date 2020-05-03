@@ -2,13 +2,8 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: currencyms
-        uri: lb://currencyms
-        predicates:
-        - Path= /calcurrency
-        
-      - id: conversionms
+       - id: conversionms
         uri: lb://conversionms
         predicates:
-        - Path= /conversion
+        - Path=/conversion/**
 © 2020 GitHub, Inc.
