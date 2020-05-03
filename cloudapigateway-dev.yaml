@@ -1,13 +1,1 @@
-spring:
-  cloud:
-    gateway:
-     routes:
-      - id: conversionms
-        uri: lb://CONVERSIONMS
-        predicates:
-        - Path=/conversion/**
-        
-        - id: currencyms
-        uri: lb://CURRENCYMS
-        predicates:
-        - Path=/calcurrency/**
+
