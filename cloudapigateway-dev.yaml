@@ -5,5 +5,10 @@ spring:
       - id: currencyms
         uri: lb://currencyms
         predicates:
-        - Path=/calcurrency
+        - Path= /calcurrency
+        
+      - id: conversionms
+        uri: lb://conversionms
+        predicates:
+        - Path= /conversion
 © 2020 GitHub, Inc.
